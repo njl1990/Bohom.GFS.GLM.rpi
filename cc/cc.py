@@ -5,10 +5,11 @@ import cv2
 from PIL import Image
 
 
-def CatchUSBVideo(window_name,camera_idx,index):
+def CatchUSBVideo(window_name,camera_idx):
 
 	#CaptureInterval=30*3600
 	CaptureInterval=30 # for test
+	index=0
 
 	cap = cv2.VideoCapture(camera_idx)
 	while cap.isOpened():
@@ -17,6 +18,7 @@ def CatchUSBVideo(window_name,camera_idx,index):
 		
 		filename = IMAGE_PATH+'/image_'+str(index)+'.jpg'
 		infofilename=INFO_PATH+'/info_'+str(index)+'.json'
+
 		ok, frame = cap.read() 
 		cv2.imwrite(filename,frame)
 		crtDate=time.strftime("%Y-%m-%d", time.localtime())
@@ -38,12 +40,7 @@ def CatchUSBVideo(window_name,camera_idx,index):
 
 ## Main
 def main():
-	index = 0 
-	while 1:
-		try:
-			CatchUSBVideo('cc',0,index)
-		except Exception as e:
-			print(e)
+	CatchUSBVideo('cc',0)
 
 if __name__ == '__main__':
 	main()
