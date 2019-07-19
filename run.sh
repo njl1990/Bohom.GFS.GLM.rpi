@@ -1,5 +1,5 @@
 # RPI run.sh
-APP_PATH=/usr/local/gfs/glm/
+APP_PATH=/usr/local/gfs/glm
 
 #1.cc
 echo start cc
