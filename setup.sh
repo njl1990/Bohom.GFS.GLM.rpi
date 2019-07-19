@@ -21,11 +21,10 @@ echo Copy application files...
 cp ./cc/cc.py $APP_PATH/cc.py
 
 # build cc dependence
-#echo install application dependence...
+echo install application dependence...
 #apt update
-#apt install python3
-#pip install Pillow
-#pip install opencv-python
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple Pillow
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python
 
 # 2. build save
 echo Install save
