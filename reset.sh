@@ -22,12 +22,6 @@ cp ./cc/cc.py $APP_PATH/cc.py
 cp run.sh ~/Desktop/run.sh
 chmod 777 ~/Desktop/run.sh
 
-# build cc dependence
-echo install application dependence...
-#apt update
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple Pillow
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python
-
 # 2. build save
 echo Install save
 echo Copy application files...
