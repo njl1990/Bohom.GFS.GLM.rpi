@@ -18,5 +18,5 @@ echo $! > $APP_PATH/mkgif_pid
 
 #4.web
 echo start web
-nohup python /images/web.py > $APP_PATH/mkgif.log &
+nohup python3 /images/web.py > $APP_PATH/web.log &
 echo $! > $APP_PATH/web_pid
