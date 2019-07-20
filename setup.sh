@@ -42,7 +42,7 @@ cp ./mkgif/mkgif.py $APP_PATH/mkgif.py
 echo Install appllication entrace...
 sudo cp ./run.sh  $APP_PATH/run.sh
 sudo cp ./stop.sh  $APP_PATH/stop.sh
-
+sudo cp ./web/web.py $IMAGE_PATH/web.py
 sudo chmod 777 $APP_PATH/run.sh
 sudo chmod 777 $APP_PATH/stop.sh
 

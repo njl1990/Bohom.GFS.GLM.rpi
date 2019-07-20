@@ -15,3 +15,8 @@ echo $! > $APP_PATH/save_pid
 echo start mkgif
 nohup python $APP_PATH/rpi/mkgif.py > $APP_PATH/mkgif.log & 
 echo $! > $APP_PATH/mkgif_pid
+
+#4.web
+echo start web
+nohup python /images/web.py > $APP_PATH/mkgif.log &
+echo $! > $APP_PATH/web_pid
